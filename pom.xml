@@ -29,6 +29,6 @@
 	</configuration>
 	</plugin>
     </plugins>
-     <finalName>myweb</finalName> 
+   <!--  <finalName>myweb</finalName> -->
   </build>
 </project>
