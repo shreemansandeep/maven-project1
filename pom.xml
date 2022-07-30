@@ -3,10 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>testproject</groupId>
   <artifactId>ProjectWeb</artifactId>
-  <packaging>war</packaging>
+   <packaging>war</packaging>
   <version>1.0</version>
   <name>ProjectWeb Maven Webapp</name>
   <url>http://maven.apache.org</url>
+	
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,17 +16,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
     <plugins>
     <plugin>
-	<artifactId>maven-war-plugin</artifactId>
-	<version>2.4</version>
+	<groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version>
 	<configuration>
-	<warSourceDirectory>WebContent</warSourceDirectory>
+	<!-- <warSourceDirectory>ProjectWeb</warSourceDirectory> --> <!-- <warSourceDirectory></warSourceDirectory> -->
 	<failOnMissingWebXml>false</failOnMissingWebXml>
 	</configuration>
 	</plugin>
     </plugins>
-    <finalName>mywebjava</finalName>
+     <finalName>myweb</finalName> 
   </build>
 </project>
